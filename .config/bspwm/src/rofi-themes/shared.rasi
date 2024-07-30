@@ -9,5 +9,5 @@
     active: #9ece6a;
     urgent: #f7768e;
     
-    img-background: url("~/.config/bspwm/rices/upii/rofi.webp", width);
+    img-background: url("~/.config/bspwm/rices/ex/rofi.webp", width);
 }

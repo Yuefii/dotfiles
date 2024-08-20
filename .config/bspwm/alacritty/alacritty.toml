@@ -44,8 +44,8 @@ decorations_theme_variant = "None"
 
 ## Number of lines/columns (not pixels) in the terminal.
 [window.dimensions]
-columns = 150
-lines = 40
+columns = 200
+lines = 50
 
 ## Blank space added around the window in pixels.
 [window.padding]

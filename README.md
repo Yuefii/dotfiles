@@ -8,5 +8,5 @@
 This is a dotfiles config that I customized for personal use, I made this config from `Archcraft`. For now I've only fully customized polybar, maybe in the future there will be more
 
 - BSPWM
-- Alacrity
+- Alacritty
 - neovim - Lazy Vim

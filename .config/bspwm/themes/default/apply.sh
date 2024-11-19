@@ -37,13 +37,13 @@ apply_polybar() {
 	# rewrite colors file
 	cat > ${PATH_PBAR}/colors.ini <<- EOF
 		[color]
-
+		
 		BACKGROUND = ${background}
 		FOREGROUND = ${foreground}
 		ALTBACKGROUND = ${altbackground}
 		ALTFOREGROUND = ${altforeground}
 		ACCENT = ${accent}
-
+		
 		BLACK = ${color0}
 		RED = ${color1}
 		GREEN = ${color2}
@@ -84,7 +84,7 @@ apply_rofi() {
 		${PATH_BSPWM}/scripts/rofi_screenshot \
 		${PATH_BSPWM}/scripts/rofi_themes \
 		${PATH_BSPWM}/scripts/rofi_windows
-
+	
 	# apply default theme fonts
 	sed -i -e "s/font:.*/font: \"$rofi_font\";/g" ${PATH_ROFI}/shared/fonts.rasi
 
@@ -127,7 +127,7 @@ apply_terminal() {
 			[colors.primary]
 			background = "${background}"
 			foreground = "${foreground}"
-
+			
 			[colors.normal]
 			black   = "${color0}"
 			red     = "${color1}"
@@ -137,7 +137,7 @@ apply_terminal() {
 			magenta = "${color5}"
 			cyan    = "${color6}"
 			white   = "${color7}"
-
+			
 			[colors.bright]
 			black   = "${color8}"
 			red     = "${color9}"
@@ -164,7 +164,7 @@ apply_terminal() {
 			selection_background ${foreground}
 			selection_foreground ${background}
 			cursor ${foreground}
-
+			
 			color0 ${color0}
 			color8 ${color8}
 			color1 ${color1}
@@ -211,17 +211,17 @@ apply_appearance() {
 		sed -i -e "s/gtk-theme-name=.*/gtk-theme-name=\"$gtk_theme\"/g" ${GTK2FILE}
 		sed -i -e "s/gtk-icon-theme-name=.*/gtk-icon-theme-name=\"$icon_theme\"/g" ${GTK2FILE}
 		sed -i -e "s/gtk-cursor-theme-name=.*/gtk-cursor-theme-name=\"$cursor_theme\"/g" ${GTK2FILE}
-
+		
 		sed -i -e "s/gtk-font-name=.*/gtk-font-name=$gtk_font/g" ${GTK3FILE}
 		sed -i -e "s/gtk-theme-name=.*/gtk-theme-name=$gtk_theme/g" ${GTK3FILE}
 		sed -i -e "s/gtk-icon-theme-name=.*/gtk-icon-theme-name=$icon_theme/g" ${GTK3FILE}
 		sed -i -e "s/gtk-cursor-theme-name=.*/gtk-cursor-theme-name=$cursor_theme/g" ${GTK3FILE}
 	fi
-
+	
 	# inherit cursor theme
 	if [[ -f "$HOME"/.icons/default/index.theme ]]; then
 		sed -i -e "s/Inherits=.*/Inherits=$cursor_theme/g" "$HOME"/.icons/default/index.theme
-	fi
+	fi	
 }
 
 # Dunst -------------------------------------
@@ -287,7 +287,7 @@ apply_bspwm() {
 		-e "s/BSPWM_BORDER=.*/BSPWM_BORDER='$bspwm_border'/g" \
 		-e "s/BSPWM_GAP=.*/BSPWM_GAP='$bspwm_gap'/g" \
 		-e "s/BSPWM_SRATIO=.*/BSPWM_SRATIO='$bspwm_sratio'/g"
-
+	
 	# reload bspwm
 	bspc wm -r
 }

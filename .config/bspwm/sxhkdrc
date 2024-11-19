@@ -4,17 +4,21 @@
 
 ##---------- Keybindings for bspwm ----------##
 
-# Terminal (alacritty)
+# Terminal (kitty)
 super + Return
-	bspterm
+	bspkitty
 
 # Terminal (floating)
 super + shift + Return
-	bspterm --float
+	bspkitty --float
 
 # Terminal (fullscreen)
 super + alt + Return
-	bspterm --full
+	bspkitty --full
+
+# Terminal (alacritty)
+ctrl + alt + t
+    bspterm
 
 ##---------- Rofi Launcher & Menus ----------##
 

@@ -5,8 +5,8 @@
 # ------------------------------------------------------------------------------
 
 # Colors
-background='#121826'
-foreground='#bbbcc0'
+background='#2E3440'
+foreground='#D8DEE9'
 color0='#3B4252'
 color1='#BF616A'
 color2='#A3BE8C'

@@ -1,0 +1,51 @@
+format = """
+[┌─](#fabd2f)$directory$git_branch$git_status
+[└─>](#fabd2f) """
+
+[directory]
+style = "#fabd2f"
+truncation_length = 4
+truncate_to_repo = true
+fish_style_pwd_dir_length = 3
+
+[directory.substitutions]
+"Documents" = " 󰧮 "
+"Music" = "  "
+"Movies" = " 󰿏 "
+"Pictures" =  " "
+"Sources" = "  "
+"Downloads" = "  "
+"~" = " 👾"
+"/" = " ─|"
+
+[line_break]
+disabled = true
+
+[git_branch]
+style = "#d3869b"
+disabled = false
+symbol = " "
+truncation_length = 5
+format = '[$symbol$branch(:$remote_branch)]($style) '
+
+[git_commit]
+disabled = false
+commit_hash_length = 1
+
+[git_status]
+disabled = false
+style = "#fe8019"
+stashed = " ${count} "
+ahead = "󰞙 ${count} "
+behind = "󰞒 ${count} "
+diverged = "󰵉 ${ahead_count} ${behind_count} "
+conflicted = " ${count} "
+deleted = " ${count} "
+renamed = " ${count} "
+modified = " ${count} "
+staged = " ${count} "
+untracked = "󱅘 ${count}"
+
+[character]
+success_symbol = "[❯](#b8bb26)"
+error_symbol = "[✖](#fb4934)"

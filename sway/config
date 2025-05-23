@@ -11,7 +11,7 @@ exec_always bash -c 'pkill waybar; exec waybar'
 
 for_window [app_id="pavucontrol"] floating enable, move position center resize 600 800
 for_window [app_id="nm-connection-editor"] floating enable, move position center
-
+bindsym $mod+t exec ~/.config/sway/scripts/theme-selector.sh
 bindsym $mod+w exec ~/.config/sway/scripts/wallpaper-selector.sh
 
     # Start a terminal
@@ -160,13 +160,8 @@ mode "resize" {
     bindsym Print exec grim -g "$(slurp)" ~/Pictures/screenshot-$(date +%s).png
     # bindsym Print exec "grimshot save area ~/Pictures/screenshot-$(date +%s).png"
 
-client.focused          #458588 #282828 #ebdbb2 #fabd2f #ebdbb2
-client.unfocused        #282828 #282828 #a89984 #282828 #a89984
-client.focused_inactive #282828 #282828 #a89984 #282828 #a89984
-client.urgent           #cc241d #282828 #fb4934 #282828 #fb4934
-
 default_border none
 default_floating_border none
 
-
+include ~/.config/sway/theme.conf
 include /etc/sway/config.d/*

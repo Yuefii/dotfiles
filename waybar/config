@@ -1,7 +1,7 @@
 {
   "layer": "top",
   "position": "top",
-  "modules-left": ["sway/workspaces", "custom/weather", "clock"],
+  "modules-left": ["custom/weather", "clock", "sway/workspaces"],
   "modules-center": [],
   "modules-right": [
     "network",

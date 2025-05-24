@@ -1,10 +1,11 @@
 window {
   margin: 5px;
   padding: 10px;
-  background-color: rgba(0, 43, 54, 0.95);
+  background-color: rgba(40, 40, 40, 0.95);
+  /* background: #282828 */
   font-family: "JetBrains Mono", "Fira Code", monospace;
   font-size: 16px;
-  color: #93a1a1;
+  color: #ebdbb2;
 }
 
 #input {
@@ -12,20 +13,22 @@ window {
   border: none;
   border-radius: 5px;
   padding: 6px 10px;
-  background-color: #073642;
-  color: #eee8d5;
+  background-color: #3c3836;
+  color: #fbf1c7;
 }
 
 #entry {
   padding: 10px;
   border-radius: 5px;
   background-color: transparent;
-  color: #839496;
+  color: #ebdbb2;
 }
 
 #entry:selected {
-  background-color: #268bd2;
-  color: #002b36;
+  background-color: #d79921;
+  /* yellow */
+  color: #282828;
+  /* background */
 }
 
 #scroll {

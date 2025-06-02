@@ -58,14 +58,14 @@
     "format": "{}",
     "tooltip": true,
     "interval": 1800,
-    "exec": "~/.config/waybar/scripts/weather-stats/main",
+    "exec": "~/.config/waybar/scripts/stats-weather",
     "return-type": "json",
   },
   "custom/docker": {
     "format": "{}",
     "return-type": "json",
     "interval": 10,
-    "exec": "~/.config/waybar/scripts/docker-stats/main",
+    "exec": "~/.config/waybar/scripts/stats-docker",
     "tooltip": true,
   },
   "clock": {

@@ -2,38 +2,36 @@
   border: none;
   border-radius: 0;
   font-family: "JetBrainsMono Nerd Font", "Font Awesome 6 Free", sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   min-height: 0;
-  padding: 2px 0 2px 0;
-  color: #002b36;
+  padding: 3px 0 3px 0;
 }
 
 #workspaces {
   border-radius: 5px;
-  background: #eee8d5;
+  background: #191724;
   margin-left: 15px;
 }
 
 #workspaces button {
-  color: #268bd2;
   border-radius: 5px;
   padding-right: 10px;
   padding-left: 10px;
+  color: #e0def4;
 }
 
-#workspaces button.active {
-  color: #fdf6e3;
+#workspaces button.focused {
   border-radius: 5px;
+  color: #eb6f92;
 }
 
 #workspaces button:hover {
-  background: #2aa198;
-  border: 0px solid;
+  background: transparent;
+  border: none;
 }
 
 window#waybar {
   background-color: transparent;
-  color: #eee8d5;
 }
 
 #custom-weather {
@@ -42,16 +40,16 @@ window#waybar {
   border-bottom-left-radius: 5px;
   padding-left: 10px;
   padding-right: 5px;
-  background-color: #268bd2;
-  color: #ffffff;
+  background-color: #191724;
+  color: #f6c177;
 }
 
 #clock {
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   padding: 0 10px 0 10px;
-  background-color: #073642;
-  color: #ffffff;
+  background-color: #191724;
+  color: #9ccfd8;
 }
 
 #network {
@@ -59,29 +57,29 @@ window#waybar {
   border-bottom-left-radius: 10px;
   padding-left: 20px;
   padding-right: 10px;
-  background-color: #eee8d5;
-  color: #002b36;
+  background-color: #191724;
+  color: #e0def4;
 }
 
 #custom-docker.docker,
 #custom-docker.docker-none,
 #custom-docker.docker-error {
   padding: 0 10px 0 10px;
-  background-color: #268bd2;
-  color: #ffffff;
+  background-color: #191724;
+  color: #9ccfd8;
 }
 
 #cpu,
 #pulseaudio {
   padding: 0 10px 0 10px;
-  background-color: #073642;
-  color: #ffffff;
+  background-color: #191724;
+  color: #f6c177;
 }
 
 #memory {
   padding: 0 10px 0 10px;
-  background-color: #073642;
-  color: #ffffff;
+  background-color: #191724;
+  color: #c4a7e7;
 }
 
 #custom-power {
@@ -90,6 +88,6 @@ window#waybar {
   margin-right: 15px;
   padding-left: 10px;
   padding-right: 20px;
-  background-color: #dc322f;
-  color: #ffffff;
+  background-color: #191724;
+  color: #eb6f92;
 }

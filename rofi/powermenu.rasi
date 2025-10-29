@@ -1,0 +1,80 @@
+configuration {
+  font: "Iosevka Nerd Font 12";
+  show-icons: true;
+  icon-theme: "Papirus";
+  display-drun: " ";
+  display-window: " ";
+  drun-display-format: "{name}";
+  disable-history: true; 
+  sidebar-mode: false;
+}
+
+@import "color.rasi"
+
+window {
+  transparency: "real";
+  background-color: @bg;
+  text-color: @ac;
+  border: 2px;
+  border-color: @bg;
+  border-radius: 0px;
+  height: 14%;
+  width: 14%; 
+  location: center;
+  x-offset: 0;
+  y-offset: 0;
+}
+
+mainbox {
+  background-color: @bg;
+  border: 0px;
+  border-radius: 0px;
+  border-color: @bg;
+  children: [ listview ];
+  spacing: 0%;
+  padding: 0%;
+}
+
+listview {
+  background-color: @bg;
+  padding: 0px;
+  columns: 1; 
+  lines: 4;  
+  spacing: 0%;
+  cycle: false;
+  dynamic: false;
+  layout: vertical;
+}
+
+element {
+  background-color: @bg;
+  text-color: @ac;
+  orientation: horizontal;
+  border-radius: 0px;
+  padding: 4px 4px 4px 4px;
+}
+
+element-icon {
+  background-color: inherit;
+  text-color: inherit;
+  size: 28px; 
+  horizontal-align: 0.5;
+  vertical-align: 0.5;
+  padding: 0 8px 0 8px;
+}
+
+element-text {
+  background-color: inherit;
+  text-color: inherit;
+  expand: true;
+  horizontal-align: 0;
+  vertical-align: 0.5;
+  margin: 0% 0.25% 0% 0.25%;
+}
+
+element selected {
+  background-color: @ac;
+  text-color: @bg;
+  border-radius: 0px;
+}
+

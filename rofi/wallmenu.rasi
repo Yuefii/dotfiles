@@ -1,0 +1,90 @@
+configuration {
+  font: "SF Mono";
+  show-icons: true;      
+  icon-theme: "Papirus";
+  drun-display-format:  "{icon}";
+  disable-history:  true;
+  sidebar-mode: false;
+}
+
+@import "color.rasi"
+
+window {
+  background-color: @bg;
+  text-color: @bg;
+  border: 0px;
+  border-radius: 0px;
+  width: 40%;
+  height: 50%;
+  location: center;
+  x-offset: 0;
+  y-offset: 0;
+}
+
+prompt {
+  enabled: false;
+}
+
+entry {
+  placeholder: "";
+  background-color: @bg;
+  text-color: transparent;
+}
+
+inputbar {
+  children: [ prompt, entry ];
+  background-color: @bg;
+  text-color: @bg;
+}
+
+listview {
+  background-color: @bg;
+  padding: 0px;
+  columns: 3;
+  spacing: 1%;
+  cycle: false;
+  dynamic: true;
+  layout: vertical;
+}
+
+
+mainbox {
+  background-color: @bg;
+  border: 0%;
+  border-radius: 0%;
+  children: [ inputbar, listview ];
+  spacing: 1%;
+  padding: 1%;
+}
+
+element {
+  background-color: @bg;
+  text-color: @ac;
+  orientation: horizontal;
+  border-radius: 0px;
+  padding: 1% 1% 1% 1%;
+  spacing: 10px;
+}
+element-icon {
+  background-color: inherit;
+  text-color: inherit;
+  horizontal-align: 0.5;
+  vertical-align: 0.5;
+  size: 190px; 
+  border: 0px;
+  padding: 0px;
+}
+element-text {
+  text-color: transparent;
+  background-color: transparent;
+  expand: false;
+  padding: 0;
+  margin: 0;
+}
+element selected {
+  background-color: @ac;
+  text-color: @bg;
+  border: 0%;
+  border-radius: 0px;
+}
+

@@ -1,0 +1,42 @@
+format = """
+$username\
+$hostname \
+$directory \
+$git\
+$git_branch\
+$git_status\
+\n(fg:arrow)$character \
+"""
+
+scan_timeout = 1
+
+[character]
+format = "$symbol"
+success_symbol = "[❯❯](#7aa2f7)"
+error_symbol = "[❯❯](#f7768e)"
+
+[username]
+format = "[upii](bold #bb9af7) in "
+disabled = false
+show_always = true
+
+[hostname]
+ssh_only = false
+format = '[$hostname](bold #7dcfff)'
+disabled = false
+
+[directory]
+truncation_length = 3
+read_only_style = '#c0caf5'
+format = 'at [$path]($read_only_style)[$read_only]($read_only_style) '
+
+[git_branch]
+format = "via [$symbol$branch]($style) "
+style = "bold #e0af68"
+symbol = " "
+
+[git_status]
+format = " [$all_status](#e0af68)"
+
+[line_break]
+disabled = true

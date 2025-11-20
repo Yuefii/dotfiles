@@ -122,7 +122,7 @@ client.placeholder      #1a1b26 #1a1b26 #c0caf5 #1a1b26 #1a1b26
 bar {
 	tray_padding 4
   status_command ~/.config/bumblebee-status/bumblebee-status -m  disk:root cpu \
-		memory battery date time pasink pasource  \
+		memory  time pasink pasource  \
 		-t iceberg-contrast
   colors {
     background #1a1b26

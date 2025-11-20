@@ -1,0 +1,53 @@
+{
+  "logo": {
+    "source": "~/.config/fastfetch/logo",
+    "color": {
+       "1": "38;2;125;207;255" 
+    }
+  },
+
+  "separator": "  ",
+  "keyColor": "38;2;187;154;247", 
+  "valueColor": "38;2;192;202;245",
+
+  "display": {
+    "bar": {
+      "char": {
+        "elapsed": "█",
+        "total": "─"
+      },
+      "color": {
+        "elapsed": "38;2;122;162;247", 
+        "total": "38;2;56;63;89",      
+        "border": "38;2;125;207;255"   
+      }
+    },
+    "size": {
+      "binaryPrefix": "IEC"
+    }
+  },
+
+  "modules": [
+    {
+      "type": "custom",
+      "format": "── Info System ──",
+      "outputColor": "38;2;125;207;255"
+    },
+
+    { "type": "os", "keyColor": "38;2;187;154;247" },
+    { "type": "kernel", "keyColor": "38;2;122;162;247" },
+    { "type": "packages", "keyColor": "38;2;125;207;255" },
+    { "type": "wm", "keyColor": "38;2;158;206;106" },
+    { "type": "shell", "keyColor": "38;2;224;175;104" },
+    { "type": "uptime", "keyColor": "38;2;187;154;247" },
+    { "type": "cpu", "keyColor": "38;2;158;206;106" },
+    { "type": "gpu", "keyColor": "38;2;122;162;247" },
+    { "type": "memory", "keyColor": "38;2;125;207;255" },
+    { 
+      "type": "disk", 
+      "folders": ["/"],
+      "keyColor": "38;2;187;154;247"
+    }
+  ]
+}
+
